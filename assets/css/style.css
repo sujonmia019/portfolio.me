@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
 body {
     padding: 0;
@@ -277,19 +277,100 @@ ul {
 
 
 /*==============
-/*Pricing Table
+/*About Me
 ================*/
 
-.pricing-table {
-    box-shadow: 0px 0px 20px 5px #e0e0e0;
+.tab-pane .front-end span {
+    display: inline-block;
+    background-color: #e1e9fa;
+    color: #7499e7;
+    padding: 3px 10px;
+    border-radius: 2px;
+    margin: 5px;
+    white-space: pre;
+    cursor: default;
+}
+
+.l-spacing {
+    letter-spacing: 1px;
+}
+
+.social-navbar-nav li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.social-navbar-nav li:last-child {
+    margin-right: 0;
+}
+
+.social-navbar-nav li a:hover {
+    -moz-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+}
+
+.social-navbar-nav li a {
+    color: #fff;
+    text-decoration: none;
+    background: #2024a9;
+    width: 30px;
+    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 50%;
+    -moz-transition: .5s all;
+    -webkit-transition: .5s all;
+    transition: .5s all;
+}
+
+.about-me-tabs>button {
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+.about-me-tabs>button:last-child {
+    margin-right: 0;
+}
+
+.about-me-tabs>button.active::before {
+    content: '';
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
     -webkit-transition: .5s;
     -moz-transition: .5s;
     transition: .5s;
-    border-radius: 5px;
 }
 
-.pricing-table:hover {
-    box-shadow: 0px 0px 20px 10px #dbdbdb;
+.about-me-tabs>button::before {
+    content: '';
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    transition: .5s;
+}
+
+.about-me-tabs>button:hover::before {
+    content: '';
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    transition: .5s;
 }
 
 
