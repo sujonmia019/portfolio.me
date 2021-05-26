@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
 body {
@@ -588,20 +581,32 @@ header{
     width: 100%;
     opacity: 0;
     visibility: hidden;
+    -webkit-transition: .8 ease;
+    -o-transition: .8 ease;
     transition: .8 ease;
 }
 .portfolio-hover-info{
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .portfolio-hover-info > h5{
-    transform: translateX(235px);
+    -webkit-transform: translateX(235px);
+        -ms-transform: translateX(235px);
+            transform: translateX(235px);
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
     transition: .5s ease;
 }
 
 .portfolio-hover-info > a{
-    transform: translateX(-235px);
+    -webkit-transform: translateX(-235px);
+        -ms-transform: translateX(-235px);
+            transform: translateX(-235px);
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
     transition: .5s ease;
 }
 
@@ -616,11 +621,15 @@ header{
 }
 
 .portfolio-item:hover .portfolio-hover-info > h5{
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
 }
 
 .portfolio-item:hover .portfolio-hover-info > a{
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
 }
 
 
@@ -634,8 +643,11 @@ header{
 
 .service {
     background: #fff;
-    box-shadow: 0 0 25px 5px #d4e0e4;
+    -webkit-box-shadow: 0 0 25px 5px #d4e0e4;
+            box-shadow: 0 0 25px 5px #d4e0e4;
     padding: 40px 60px;
+    -webkit-transition: .7s all;
+    -o-transition: .7s all;
     transition: .7s all;
 }
 .service-item > h5{
@@ -643,16 +655,117 @@ header{
     margin-bottom: 0;
 }
 .service:hover{
+    background-image: -o-radial-gradient(#00c8ff 30%,#0193f9 100%);
     background-image: radial-gradient(#00c8ff 30%,#0193f9 100%);
     cursor: pointer;
 }
 .service-item > img{
-    filter: brightness(0); 
+    -webkit-filter: brightness(0);
+            filter: brightness(0); 
 }
 .service:hover .service-item > img{
-    filter: brightness(100%); 
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%); 
 }
 .service:hover .service-item > h5{
     color: #fff;
 }
 
+/* =============
+/* Team Member 
+===============*/
+.member-info > h6{
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.member-info > p{
+    margin: 15px 0;
+    color: antiquewhite;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.col{
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.col > img{
+    cursor: pointer;
+    -webkit-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    transition: .5s ease-in;
+}
+.col > img:hover{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+.col span{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #0D6EFD;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 2;
+}
+
+.col span.arrow{
+    right: unset;
+    left: 0;
+    border-left: 15px solid #0D6EFD;
+    border-right: 15px solid transparent;
+}
+
+.social-link{
+    margin-bottom: 1rem;
+}
+
+.social-link > a{
+    color: #fff;
+    margin: 0 3px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    transition: .5s all;
+}
+.social-link > a:hover{
+    border-radius: 50%;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.social-link > a:nth-child(1):hover{
+    background-color: #38529A;
+    border-color: #38529A;
+}
+
+.social-link > a:nth-child(2):hover{
+    background-color: #1BB1E4;
+    border-color: #1BB1E4;
+}
+
+.social-link > a:nth-child(3):hover{
+    background-color: #046596;
+    border-color: #046596;
+}
