@@ -9,7 +9,8 @@
         margin-top: 10px;
     }
     li.contacts-li > .contacts{
-        min-width: 125px !important;
+        min-width: 130px !important;
+        text-align: center;
     }
     .col{
         -ms-flex-preferred-size: 50%;
