@@ -769,3 +769,10 @@ header{
     background-color: #046596;
     border-color: #046596;
 }
+
+/* =================== 
+/* Footer Copyright
+=====================*/
+.copyright p{
+    font-size: 14px;
+}
