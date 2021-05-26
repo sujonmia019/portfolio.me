@@ -9,13 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Sujon Portfolio</title>
 </head>
 
 
 <body>
     <!-- Header start -->
-    <header class="bg-white shadow position-fixed top-0 w-100 py-2" style="z-index: 9999;">
+    <header id="headers" class="bg-white top-0 w-100 py-2 header-shadow">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -25,7 +26,7 @@
                         <a class="navbar-brand" href="#">
                             <img src="assets/img/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-top"> Bootstrap
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler icon-bar" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse main-navs" id="navigation">
@@ -105,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mt-4">
+                <div class="row mt-5">
                     <div class="col-xl-5 col-12 mb-4 mb-lg-0">
                         <!-- profile -->
                         <div class="portfolio">
@@ -233,46 +234,228 @@
         </section>
         <!-- About me end -->
 
+        <!-- My Services start -->
+        <section class="py-5 service-bg" style="background-image: url(assets/img/servie-bg.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="about-me ps-3" style="border-left: 5px solid #e6e6e6;">
+                            <div class="about">
+                                <h2 class="fw-bold text-primary">My Services</h2>
+                                <span class="text-primary">My Introduction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Item Top -->
+                <div class="row mt-5">
+                    <div class="col-xl-3 col-sm-6 col-12 mb-4 mb-xl-0">
+                        <div class="service">
+                            <div class="service-item text-center">
+                                <img src="assets/img/services/services.png" alt="">
+                                <h5>services one</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12 mb-4 mb-xl-0">
+                        <div class="service">
+                            <div class="service-item text-center">
+                                <img src="assets/img/services/services.png" alt="">
+                                <h5>services one</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12 mb-4 mb-xl-0">
+                        <div class="service">
+                            <div class="service-item text-center">
+                                <img src="assets/img/services/services.png" alt="">
+                                <h5>services one</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12 mb-4 mb-xl-0">
+                        <div class="service">
+                            <div class="service-item text-center">
+                                <img src="assets/img/services/services.png" alt="">
+                                <h5>services one</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Item Bottom -->
+                <div class="row mt-0 mt-xl-4">
+                    <div class="col-xl-3 col-sm-6 col-12 mb-4 mb-xl-0">
+                        <div class="service">
+                            <div class="service-item text-center">
+                                <img src="assets/img/services/services.png" alt="">
+                                <h5>services one</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12 mb-4 mb-xl-0">
+                        <div class="service">
+                            <div class="service-item text-center">
+                                <img src="assets/img/services/services.png" alt="">
+                                <h5>services one</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12 mb-4 mb-xl-0">
+                        <div class="service">
+                            <div class="service-item text-center">
+                                <img src="assets/img/services/services.png" alt="">
+                                <h5>services one</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12 mb-4 mb-xl-0">
+                        <div class="service">
+                            <div class="service-item text-center">
+                                <img src="assets/img/services/services.png" alt="">
+                                <h5>services one</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- My Services end -->
+
         <!-- My Portfolio start -->
         <section class="py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center">
-                        <h3 class="fw-bold">My Portfoilo</h3>
-                        <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, non?</p>
+                    <div class="col-12">
+                        <div class="about-me ps-3" style="border-left: 5px solid #e6e6e6;">
+                            <div class="about">
+                                <h2 class="fw-bold text-primary">Portfolio</h2>
+                                <span class="text-primary">My Recent Works</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row mt-5">
-                    <div class="col-xl-4 col-sm-6 col-12 mb-4 mb-lg-0">
-                        <div class="portfolio portfolio-1"></div>
+                    <!-- Portfolio row  -->
+                    <div class="col-xl-4 col-sm-6 col-12 mb-4">
+                        <div class="position-relative portfolio-item">
+                            <div class="portfolio portfolio-1"></div>
+                            <div class="overlay position-absolute top-0">
+                                <div class="position-absolute bottom-0 portfolio-hover-info text-center mb-3 text-capitalize">
+                                    <h5 class="text-light fw-lighter mb-3">hello word</h5>
+                                    <a href="index.html" class=" btn btn-sm rounded-pill btn-outline-light px-3">Preview</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xl-4 col-sm-6 col-12 mb-4 mb-lg-0">
-                        <div class="portfolio portfolio-2"></div>
+                    <div class="col-xl-4 col-sm-6 col-12 mb-4">
+                        <div class="position-relative portfolio-item">
+                            <div class="portfolio portfolio-2"></div>
+                            <div class="overlay position-absolute top-0">
+                                <div class="position-absolute bottom-0 portfolio-hover-info text-center mb-3 text-capitalize">
+                                    <h5 class="text-light fw-lighter mb-3">hello word</h5>
+                                    <a href="index.html" class=" btn btn-sm rounded-pill btn-outline-light px-3">Preview</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xl-4 col-sm-6 col-12 mb-4 mb-lg-0">
-                        <div class="portfolio portfolio-3"></div>
+                    <div class="col-xl-4 col-sm-6 col-12 mb-4">
+                        <div class="position-relative portfolio-item">
+                            <div class="portfolio portfolio-3"></div>
+                            <div class="overlay position-absolute top-0">
+                                <div class="position-absolute bottom-0 portfolio-hover-info text-center mb-3 text-capitalize">
+                                    <h5 class="text-light fw-lighter mb-3">hello word</h5>
+                                    <a href="index.html" class=" btn btn-sm rounded-pill btn-outline-light px-3">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio row  -->
+                    <div class="col-xl-4 col-sm-6 col-12 mb-4 mb-md-0">
+                        <div class="position-relative portfolio-item">
+                            <div class="portfolio portfolio-1"></div>
+                            <div class="overlay position-absolute top-0">
+                                <div class="position-absolute bottom-0 portfolio-hover-info text-center mb-3 text-capitalize">
+                                    <h5 class="text-light fw-lighter mb-3">hello word</h5>
+                                    <a href="index.html" class=" btn btn-sm rounded-pill btn-outline-light px-3">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6 col-12 mb-4 mb-md-0">
+                        <div class="position-relative portfolio-item">
+                            <div class="portfolio portfolio-2"></div>
+                            <div class="overlay position-absolute top-0">
+                                <div class="position-absolute bottom-0 portfolio-hover-info text-center mb-3 text-capitalize">
+                                    <h5 class="text-light fw-lighter mb-3">hello word</h5>
+                                    <a href="index.html" class=" btn btn-sm rounded-pill btn-outline-light px-3">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6 col-12 mb-4 mb-md-0">
+                        <div class="position-relative portfolio-item">
+                            <div class="portfolio portfolio-3"></div>
+                            <div class="overlay position-absolute top-0">
+                                <div class="position-absolute bottom-0 portfolio-hover-info text-center mb-3 text-capitalize">
+                                    <h5 class="text-light fw-lighter mb-3">hello word</h5>
+                                    <a href="index.html" class=" btn btn-sm rounded-pill btn-outline-light px-3">Preview</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row mt-4">
-                    <div class="col-xl-4 col-sm-6 col-12 mb-4 mb-lg-0">
-                        <div class="portfolio portfolio-1"></div>
-                    </div>
-                    <div class="col-xl-4 col-sm-6 col-12 mb-4 mb-lg-0">
-                        <div class="portfolio portfolio-2"></div>
-                    </div>
-                    <div class="col-xl-4 col-sm-6 col-12 mb-4 mb-lg-0">
-                        <div class="portfolio portfolio-3"></div>
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <a href="" class="btn btn-md btn-outline-primary rounded-pill shadow px-4 py-2 fw-normal">SEE MORE</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- My Portfolio end -->
-    </main>
 
+        <!-- Team Member Start -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="about-me ps-3" style="border-left: 5px solid #e6e6e6;">
+                            <div class="about">
+                                <h2 class="fw-bold text-primary">My Team</h2>
+                                <span class="text-primary">Best Team Member</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Member info -->
+                <div class="row mt-5 g-0 bg-primary">
+                    <div class="col-xl-3">
+                        <img class="w-100" src="assets/img/team-member/1.jpg" alt="">
+                    </div>
+                    <div class="col-xl-3">
+                        <span>hello word</span>
+                    </div>
+                    <div class="col-xl-3">
+                        <img class="w-100" src="assets/img/team-member/1.jpg" alt="">
+                    </div>
+                    <div class="col-xl-3">
+                        <span>hello word</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team Member End -->
+
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js "></script>
     <!-- fontawesome cdn -->
-    <script src="https://kit.fontawesome.com/6cc864a6fb.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6cc864a6fb.js"></script>
+    <script src="assets/js/min.js"></script>
 
 </body>
 
